@@ -60,3 +60,41 @@ x86_64 바이너리를 ARM 기기에서 실행했을 때 발생
 
 즉, Miniconda3-latest-Linux-x86_64.sh를 받아서 실행했을 가능성이 높습니다
 👉 반드시 aarch64 빌드를 사용하세요.
+
+----------------------------------
+
+🔹 준비물
+
+라즈베리파이 5 (64bit, SSH 서버 켜져 있어야 함)
+
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+
+로컬 PC에 VS Code 설치 + 확장팩 Remote - SSH 설치
+
+VS Code Marketplace
+
+🔹 접속 절차
+1. 로컬 PC에서 SSH 키 만들기 (한 번만)
+ssh-keygen -t ed25519 -C "raspi-remote"
+
+
+→ ~/.ssh/id_ed25519 키가 생성됩니다.
+
+2. 공개키를 라즈베리파이에 등록
+
+로컬에서:
+
+ssh-copy-id -i ~/.ssh/id_ed25519.pub pi@라즈베리파이_IP
+
+
+(안 되면 cat ~/.ssh/id_ed25519.pub 해서 수동으로 ~/.ssh/authorized_keys에 붙여넣기)
+
+3. VS Code에서 연결
+
+VS Code → 좌측 하단 >< 아이콘 → Connect to Host...
+
+pi@라즈베리파이_IP 입력
+
+처음 연결 시 비밀번호 입력 필요 (SSH 키 설정하면 이후 자동 로그인)
