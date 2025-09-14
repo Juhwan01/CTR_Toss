@@ -1,0 +1,97 @@
+Looking in indexes: https://pypi.org/simple, https://pypi.nvidia.com
+Requirement already satisfied: cudf-cu12==23.10.0 in /usr/local/lib/python3.10/dist-packages (23.10.0)
+Requirement already satisfied: dask-cudf-cu12==23.10.0 in /usr/local/lib/python3.10/dist-packages (23.10.0)
+Requirement already satisfied: nvtabular==23.8.0 in /usr/local/lib/python3.10/dist-packages (23.8.0)
+Requirement already satisfied: cupy-cuda12x==13.6.0 in /usr/local/lib/python3.10/dist-packages (13.6.0)
+Requirement already satisfied: xgboost in /usr/local/lib/python3.10/dist-packages (3.0.5)
+Collecting dask~=2023.9
+  Downloading dask-2023.12.1-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: pandas~=1.5 in /usr/local/lib/python3.10/dist-packages (1.5.3)
+Requirement already satisfied: numpy~=1.24 in /usr/local/lib/python3.10/dist-packages (1.26.4)
+Requirement already satisfied: scikit-learn~=1.7 in /usr/local/lib/python3.10/dist-packages (1.7.2)
+Collecting psutil~=5.9
+  Downloading psutil-5.9.8-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)
+Requirement already satisfied: pyarrow~=12.0 in /usr/local/lib/python3.10/dist-packages (12.0.1)
+Requirement already satisfied: cachetools in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (6.2.0)
+Requirement already satisfied: cuda-python<13.0a0,>=12.0 in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (12.9.2)
+Requirement already satisfied: fsspec>=0.6.0 in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (2024.2.0)
+Requirement already satisfied: numba<0.58,>=0.57 in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (0.57.1)
+Collecting numpy~=1.24
+  Downloading numpy-1.24.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Requirement already satisfied: nvtx>=0.2.1 in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (0.2.13)
+Requirement already satisfied: packaging in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (23.2)
+Requirement already satisfied: protobuf<5,>=4.21 in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (4.21.12)
+Requirement already satisfied: rmm-cu12==23.10.* in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (23.10.0)
+Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.10/dist-packages (from cudf-cu12==23.10.0) (4.9.0)
+Collecting dask~=2023.9
+  Downloading dask-2023.9.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting distributed==2023.9.2 (from dask-cudf-cu12==23.10.0)
+  Downloading distributed-2023.9.2-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: merlin-core>=23.4.0 in /usr/local/lib/python3.10/dist-packages (from nvtabular==23.8.0) (23.8.0)
+Requirement already satisfied: merlin-dataloader>=23.4.0 in /usr/local/lib/python3.10/dist-packages (from nvtabular==23.8.0) (23.8.0)
+Requirement already satisfied: scipy in /usr/local/lib/python3.10/dist-packages (from nvtabular==23.8.0) (1.15.3)
+Requirement already satisfied: fastrlock>=0.5 in /usr/local/lib/python3.10/dist-packages (from cupy-cuda12x==13.6.0) (0.8.3)
+Requirement already satisfied: click>=8.0 in /usr/local/lib/python3.10/dist-packages (from dask~=2023.9) (8.2.1)
+Requirement already satisfied: cloudpickle>=1.5.0 in /usr/local/lib/python3.10/dist-packages (from dask~=2023.9) (3.1.1)
+Requirement already satisfied: partd>=1.2.0 in /usr/local/lib/python3.10/dist-packages (from dask~=2023.9) (1.4.2)
+Requirement already satisfied: pyyaml>=5.3.1 in /usr/local/lib/python3.10/dist-packages (from dask~=2023.9) (6.0.2)
+Requirement already satisfied: toolz>=0.10.0 in /usr/local/lib/python3.10/dist-packages (from dask~=2023.9) (0.10.0)
+Requirement already satisfied: importlib-metadata>=4.13.0 in /usr/local/lib/python3.10/dist-packages (from dask~=2023.9) (8.7.0)
+Requirement already satisfied: jinja2>=2.10.3 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (3.1.3)
+Requirement already satisfied: locket>=1.0.0 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (1.0.0)
+Requirement already satisfied: msgpack>=1.0.0 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (1.1.1)
+Requirement already satisfied: sortedcontainers>=2.0.5 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (2.4.0)
+Requirement already satisfied: tblib>=1.6.0 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (3.1.0)
+Requirement already satisfied: tornado>=6.0.4 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (6.5.2)
+Requirement already satisfied: urllib3>=1.24.3 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (2.2.0)
+Requirement already satisfied: zict>=3.0.0 in /usr/local/lib/python3.10/dist-packages (from distributed==2023.9.2->dask-cudf-cu12==23.10.0) (3.0.0)
+Requirement already satisfied: nvidia-nccl-cu12 in /usr/local/lib/python3.10/dist-packages (from xgboost) (2.19.3)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.10/dist-packages (from pandas~=1.5) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas~=1.5) (2025.2)
+Requirement already satisfied: joblib>=1.2.0 in /usr/local/lib/python3.10/dist-packages (from scikit-learn~=1.7) (1.5.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /usr/local/lib/python3.10/dist-packages (from scikit-learn~=1.7) (3.6.0)
+Requirement already satisfied: cuda-bindings~=12.9.2 in /usr/local/lib/python3.10/dist-packages (from cuda-python<13.0a0,>=12.0->cudf-cu12==23.10.0) (12.9.2)
+Requirement already satisfied: zipp>=3.20 in /usr/local/lib/python3.10/dist-packages (from importlib-metadata>=4.13.0->dask~=2023.9) (3.23.0)
+Requirement already satisfied: dask-cuda>=22.12.0 in /usr/local/lib/python3.10/dist-packages (from merlin-core>=23.4.0->nvtabular==23.8.0) (23.10.0)
+Requirement already satisfied: tqdm>=4.0 in /usr/local/lib/python3.10/dist-packages (from merlin-core>=23.4.0->nvtabular==23.8.0) (4.67.1)
+Requirement already satisfied: tensorflow-metadata>=1.2.0 in /usr/local/lib/python3.10/dist-packages (from merlin-core>=23.4.0->nvtabular==23.8.0) (1.17.2)
+Requirement already satisfied: betterproto<2.0.0 in /usr/local/lib/python3.10/dist-packages (from merlin-core>=23.4.0->nvtabular==23.8.0) (1.2.5)
+Requirement already satisfied: npy-append-array in /usr/local/lib/python3.10/dist-packages (from merlin-core>=23.4.0->nvtabular==23.8.0) (0.9.19)
+Requirement already satisfied: pynvml<11.5,>=11.0.0 in /usr/local/lib/python3.10/dist-packages (from merlin-core>=23.4.0->nvtabular==23.8.0) (11.4.1)
+Requirement already satisfied: llvmlite<0.41,>=0.40.0dev0 in /usr/local/lib/python3.10/dist-packages (from numba<0.58,>=0.57->cudf-cu12==23.10.0) (0.40.1)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.8.1->pandas~=1.5) (1.16.0)
+Requirement already satisfied: grpclib in /usr/local/lib/python3.10/dist-packages (from betterproto<2.0.0->merlin-core>=23.4.0->nvtabular==23.8.0) (0.4.8)
+Requirement already satisfied: stringcase in /usr/local/lib/python3.10/dist-packages (from betterproto<2.0.0->merlin-core>=23.4.0->nvtabular==23.8.0) (1.2.0)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.10/dist-packages (from cuda-bindings~=12.9.2->cuda-python<13.0a0,>=12.0->cudf-cu12==23.10.0) (1.2.2)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2>=2.10.3->distributed==2023.9.2->dask-cudf-cu12==23.10.0) (2.1.5)
+Requirement already satisfied: absl-py<3.0.0,>=0.9 in /usr/local/lib/python3.10/dist-packages (from tensorflow-metadata>=1.2.0->merlin-core>=23.4.0->nvtabular==23.8.0) (2.3.1)
+Requirement already satisfied: h2<5,>=3.1.0 in /usr/local/lib/python3.10/dist-packages (from grpclib->betterproto<2.0.0->merlin-core>=23.4.0->nvtabular==23.8.0) (4.3.0)
+Requirement already satisfied: multidict in /usr/local/lib/python3.10/dist-packages (from grpclib->betterproto<2.0.0->merlin-core>=23.4.0->nvtabular==23.8.0) (6.6.4)
+Requirement already satisfied: hyperframe<7,>=6.1 in /usr/local/lib/python3.10/dist-packages (from h2<5,>=3.1.0->grpclib->betterproto<2.0.0->merlin-core>=23.4.0->nvtabular==23.8.0) (6.1.0)
+Requirement already satisfied: hpack<5,>=4.1 in /usr/local/lib/python3.10/dist-packages (from h2<5,>=3.1.0->grpclib->betterproto<2.0.0->merlin-core>=23.4.0->nvtabular==23.8.0) (4.1.0)
+Downloading dask-2023.9.2-py3-none-any.whl (1.2 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m59.8 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading distributed-2023.9.2-py3-none-any.whl (994 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/994.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m994.9/994.9 kB[0m [31m184.4 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading numpy-1.24.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/17.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━[0m [32m7.5/17.3 MB[0m [31m226.1 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m17.3/17.3 MB[0m [31m308.9 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading psutil-5.9.8-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (288 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/288.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m288.2/288.2 kB[0m [31m322.5 MB/s[0m eta [36m0:00:00[0m
+[?25hInstalling collected packages: psutil, numpy, dask, distributed
+  Attempting uninstall: psutil
+    Found existing installation: psutil 7.0.0
+    Uninstalling psutil-7.0.0:
+      Successfully uninstalled psutil-7.0.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.4
+    Uninstalling numpy-1.26.4:
+      Successfully uninstalled numpy-1.26.4
+  Attempting uninstall: dask
+    Found existing installation: dask 2.30.0
+    Uninstalling dask-2.30.0:
+      Successfully uninstalled dask-2.30.0
+  Attempting uninstall: distributed
+    Found existing installation: distributed 2.30.1
+    Uninstalling distributed-2.30.1:
+      Successfully uninstalled distributed-2.30.1
+Successfully installed dask-2023.9.2 distributed-2023.9.2 numpy-1.24.4 psutil-5.9.8

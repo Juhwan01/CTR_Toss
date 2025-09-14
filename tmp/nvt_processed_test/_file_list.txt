@@ -1,0 +1,2 @@
+1
+tmp/nvt_processed_test/part_0.parquet
